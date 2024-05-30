@@ -28,7 +28,7 @@ function NewPage({ params }) {
 
   const onSubmit = async (e) => {
     e.preventDefault()
-
+ 
     if (params.id) {
 
       const res = await fetch(`/api/tasks/${params.id}`, {
